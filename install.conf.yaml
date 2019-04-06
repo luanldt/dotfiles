@@ -6,9 +6,15 @@
 
 - link:
     ~/.dotfiles: ''
-    #~/.tmux.conf: tmux.conf
-    #~/.vim: vim
-    #~/.vimrc: vimrc
+    ~/.config/nvim: nvim
+    ~/.config/i3: i3
+    ~/.config/scripts: scripts
+    ~/.config/termite: termite
+    ~/.local/share/fonts" : fonts
+    ~/.config/compton" : compton
+    ~/.Xresources" : xsession/Resources
+    ~/.xinitrc" : xsession/xinitrc
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
