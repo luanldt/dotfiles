@@ -184,4 +184,4 @@ for_window [class="^.*"] border none
 
 
 
-; vim:ft=dosini
+#; vim:ft=dosini
