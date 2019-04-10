@@ -11,9 +11,10 @@
     ~/.config/i3: i3
     ~/.config/scripts: scripts
     ~/.config/termite: termite
-    ~/.local/share/fonts" : fonts
-    ~/.config/compton" : compton
-    ~/.config/tmux/config" : tmux
+    ~/.local/share/fonts : fonts
+    ~/.config/compton : compton
+    ~/.tmux.conf : tmux/config
+    ~/.config/zsh : zsh
     ~/.Xresources" : xsession/Xresources
     ~/.xinitrc" : xsession/xinitrc
 

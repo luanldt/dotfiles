@@ -4,6 +4,28 @@ set -g mouse on
 ### DESIGN CHANGES ###
 ######################
 
+#Priority: prefix key and reloading tmux.conf:
+#-------------------------------------------------------#
+#change prefix from C-b to C-a
+unbind C-b 
+set -g prefix C-a  
+ 
+#bind C-a C-a to 'home', or start of line, which was C-a previously  
+bind C-a send-prefix
+#-------------------------------------------------------#
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+# switch panes using Alt-arrow without prefix
+bind h select-pane -L
+bind l select-pane -R
+bind k select-pane -U
+bind j select-pane -D
+
 # loud or quiet?
 set-option -g visual-activity off
 set-option -g visual-bell off
@@ -12,10 +34,13 @@ set-window-option -g monitor-activity off
 set-option -g bell-action none
 
 #  modes
-setw -g mode-attr bold
+set -g mode-attr bold
 
 # messages
 set -g message-attr bold
+
+#256 colours
+set -g default-terminal "screen-256color"
 
 #### http://dotshare.it/dots/8268/0/raw/
 
@@ -65,4 +90,12 @@ set-option -g clock-mode-style 24
 set-option -g message-bg default
 set-option -g message-fg default
 
-; vim: ft=dosini cms=#%s
+# default shell zsh
+set-option -g default-shell /usr/bin/zsh
+set-option -g default-command /usr/bin/zsh
+
+# Powerline font
+tmux_conf_theme_left_separator_main=''
+tmux_conf_theme_left_separator_sub=''
+tmux_conf_theme_right_separator_main=''
+tmux_conf_theme_right_separator_sub=''

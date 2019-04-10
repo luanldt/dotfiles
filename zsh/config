@@ -1,0 +1,4 @@
+# https://github.com/yardnsm/blox-zsh-theme
+source "${ZDOTDIR:-$HOME}/.dotfiles/libs/github/blox-zsh-theme/blox.zsh"
+# https://github.com/zsh-users/zsh-autosuggestions
+source "${ZDOTDIR:-$HOME}/.dotfiles/libs/github/zsh-autosuggestions/zsh-autosuggestions.zsh"
