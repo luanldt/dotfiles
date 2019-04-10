@@ -13,6 +13,7 @@
     ~/.config/termite: termite
     ~/.local/share/fonts" : fonts
     ~/.config/compton" : compton
+    ~/.config/tmux/config" : tmux
     ~/.Xresources" : xsession/Xresources
     ~/.xinitrc" : xsession/xinitrc
 

@@ -1,1 +1,1 @@
-set guifont=Cousine\ For\ Powerline:h12
+set guifont=Cousine\ For\ Powerline:h11
