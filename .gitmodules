@@ -4,9 +4,12 @@
 [submodule "libs/github/fonts"]
 	path = libs/github/fonts
 	url = https://github.com/powerline/fonts
-[submodule "libs/github/blox-zsh-theme"]
-	path = libs/github/blox-zsh-theme
-	url = https://github.com/yardnsm/blox-zsh-theme
 [submodule "libs/github/zsh-autosuggestions"]
 	path = libs/github/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "libs/github/oh-my-zsh"]
+	path = libs/github/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "libs/github/powerlevel9k"]
+	path = powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k

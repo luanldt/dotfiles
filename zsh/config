@@ -1,4 +1,25 @@
-# https://github.com/yardnsm/blox-zsh-theme
-source "${ZDOTDIR:-$HOME}/.dotfiles/libs/github/blox-zsh-theme/blox.zsh"
+export LANG="en_US.UTF-8"
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+POWERLEVEL9K_MODE='awesome-fontconfig'
+#env
+export ZSH=${ZDOTDIR:-$HOME}/.dotfiles/libs/github/oh-my-zsh
+# https://github.com/robbyrussell/oh-my-zsh
+source "${ZSH}/oh-my-zsh.sh"
 # https://github.com/zsh-users/zsh-autosuggestions
 source "${ZDOTDIR:-$HOME}/.dotfiles/libs/github/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# https://github.com/bhilburn/powerlevel9k 
+source "${ZDOTDIR:-$HOME}/.dotfiles/libs/github/powerlevel9k/powerlevel9k.zsh-theme"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+
+ # --- Plugins
+plugins=(
+	git
+	zsh-autosuggestions
+)
