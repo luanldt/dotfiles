@@ -17,6 +17,7 @@
     ~/.Xresources" : xsession/Xresources
     ~/.xinitrc" : xsession/xinitrc
     ~/.tern-config" : nvim/tern-config
+    ~/.config/terminator" : terminator
 
 
 - shell:

@@ -1,8 +1,9 @@
 [options]
 mouse_autohide = true
-font = Liberation Mono for Powerline 11
-scrollback_lines = 0
+font = Liberation Mono for Powerline 13
+scrollback_lines = 100000
 hyperlinks = true
+scroll_on_keystroke = true
 
 # constrain WM resize operations to character size
 size_hints = true
