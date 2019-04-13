@@ -13,10 +13,10 @@
     ~/.config/termite: termite
     ~/.local/share/fonts : fonts
     ~/.config/compton : compton
-    ~/.tmux.conf : tmux/config
     ~/.config/zsh : zsh
     ~/.Xresources" : xsession/Xresources
     ~/.xinitrc" : xsession/xinitrc
+    ~/.tern-config" : nvim/tern-config
 
 
 - shell:

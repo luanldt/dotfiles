@@ -1,0 +1,18 @@
+{
+	"libs": [
+		"browser",
+		"jquery",
+		"react",
+		"vue"
+	],
+	"plugins": {
+		"angular": {},
+		"doc_comment": null,
+		"es_modules": {},
+		"webpack": {},
+		"node": {}
+	},
+	"dontLoad": [
+		"node_modules/**"
+	]
+}

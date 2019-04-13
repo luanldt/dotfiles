@@ -1,1 +1,1 @@
-set guifont=Cousine\ For\ Powerline:h11
+set guifont=Inconsolata-dz\ for\ Powerline:h11

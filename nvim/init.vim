@@ -18,6 +18,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'sickill/vim-monokai'
+Plug 'powerline/powerline-fonts'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 
 call plug#end()
 
@@ -66,8 +68,14 @@ let g:NERDTreeIndicatorMapCustom = {
 
 
 " Airline {{{
-let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme = "hybrid"
+let g:airline_theme = "powerlineish"
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
 " unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
@@ -81,25 +89,23 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_powerline_fonts = 1
-" }}} Airline
 
-" Javascript Config {{{
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
-let g:javascript_plugin_jsdoc = 1
-" }}} Javascript Config
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 "Autoformat {{{
 noremap <F3> :Autoformat<CR>
 "}}} Autoformat
+
+
+
+" Start autocompletion after 4 chars
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_min_num_identifier_candidate_chars = 1
+let g:ycm_enable_diagnostic_highlighting = 0
