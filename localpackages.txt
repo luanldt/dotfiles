@@ -1,0 +1,4 @@
+polybar-git
+spotify
+termsyn-font
+ttf-material-design-icons

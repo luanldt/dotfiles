@@ -9,16 +9,17 @@
     ~/.dotfiles: ''
     ~/.config/nvim: nvim
     ~/.config/i3: i3
+    ~/.config/polybar: polybar
     ~/.config/scripts: scripts
     ~/.config/termite: termite
     ~/.local/share/fonts : fonts
     ~/.config/compton : compton
     ~/.config/zsh : zsh
-    ~/.Xresources" : xsession/Xresources
-    ~/.xinitrc" : xsession/xinitrc
+    ~/.Xresources : xsession/Xresources
+    ~/.xinitrc : xsession/xinitrc
     ~/.tern-config" : nvim/tern-config
-    ~/.config/terminator" : terminator
 
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ./install_packages.sh

@@ -59,7 +59,6 @@ bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -129,6 +128,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+# Launch default
+exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/chromium'
+exec --no-startup-id i3-msg 'workspace 2:Code; exec /usr/bin/nvim'
+exec --no-startup-id i3-msg 'workspace 3:Terminal; exec /usr/bin/termite'
+exec --no-startup-id i3-msg 'workspace 10:Spotify; exec /usr/bin/spotify'
+
 exec_always --no-startup-id $HOME/.config/scripts/i3_startup.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -136,8 +141,6 @@ exec_always --no-startup-id $HOME/.config/scripts/i3_startup.sh
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# apply config urxvt
-exec_always --no-startup-id /usr/bin/xrdb -merge $HOME/.Xresources
 
 
 # reload the configuration file
