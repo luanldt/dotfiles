@@ -13,7 +13,7 @@ else
 fi
 
 # change background
-/usr/bin/feh --bg-fill /home/luandeptrai/1.jpg
+/usr/bin/feh --bg-fill $HOME/.config/wallpaper/1.jpg
 
 # effect transparent ...
 /usr/bin/compton
