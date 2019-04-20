@@ -9,7 +9,7 @@ git clone https://aur.archlinux.org/yaourt.git
 cd yaourt
 makepkg -si
 cd ../..
-tm -rf temp-yaourt-repos
+rm -rf temp-yaourt-repos
 
 yaourt -S --noconfirm pacaur
 

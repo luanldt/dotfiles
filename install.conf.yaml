@@ -14,6 +14,7 @@
     ~/.config/termite: termite
     ~/.local/share/fonts : fonts
     ~/.config/compton : compton
+    ~/.config/wallpaper : wallpaper
     ~/.config/zsh : zsh
     ~/.Xresources : xsession/Xresources
     ~/.xinitrc : xsession/xinitrc
