@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Shift+Return exec termite
+bindsym $mod+Shift+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -129,10 +129,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Launch default
-exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/chromium'
-exec --no-startup-id i3-msg 'workspace 2:Code; exec /usr/bin/nvim'
-exec --no-startup-id i3-msg 'workspace 3:Terminal; exec /usr/bin/termite'
-exec --no-startup-id i3-msg 'workspace 10:Spotify; exec /usr/bin/spotify'
+#exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/chromium'
+#exec --no-startup-id i3-msg 'workspace 2:Code; exec /usr/bin/nvim'
+#exec --no-startup-id i3-msg 'workspace 3:Terminal; exec /usr/bin/termite'
+#exec --no-startup-id i3-msg 'workspace 10:Spotify; exec /usr/bin/spotify'
 
 exec_always --no-startup-id $HOME/.config/scripts/i3_startup.sh
 

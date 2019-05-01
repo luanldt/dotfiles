@@ -16,6 +16,7 @@
     ~/.config/compton : compton
     ~/.config/wallpaper : wallpaper
     ~/.config/zsh : zsh
+    ~/.config/alacritty: alacritty
     ~/.Xresources : xsession/Xresources
     ~/.xinitrc : xsession/xinitrc
     ~/.tern-config" : nvim/tern-config

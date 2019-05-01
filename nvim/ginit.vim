@@ -1,1 +1,1 @@
-set guifont=Inconsolata-dz\ for\ Powerline:h5
+set guifont=IBM\ Plex\ Mono:h10
