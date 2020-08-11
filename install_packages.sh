@@ -13,5 +13,5 @@ rm -rf temp-yaourt-repos
 
 yaourt -S --noconfirm pacaur
 
-yaourt -S --needed --noconfirm `cat packages.txt`
+yaourt -S --needed --noconfirm `cat packages.txt` --verbose
 pacaur -S --noedit --noconfirm --needed localpackages.txt

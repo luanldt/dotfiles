@@ -11,7 +11,6 @@
     ~/.config/i3: i3
     ~/.config/polybar: polybar
     ~/.config/scripts: scripts
-    ~/.config/termite: termite
     ~/.local/share/fonts : fonts
     ~/.config/compton : compton
     ~/.config/wallpaper : wallpaper
