@@ -20,9 +20,11 @@ font-0 = NotoSans-Regular:size=10;1
 font-1 = MaterialIcons:size=12;2
 font-2 = Termsynu:size=10:antialias=false;0
 font-3 = FontAwesome:size=12;2
+font-4 = unifont:size=8;-1
+font-5 = Font Awesome 5 Free:size=10;1
 
 modules-left = powermenu
-modules-right = mpris pavolume backlight wireless-network wired-network battery date
+modules-right = pavolume backlight wireless-network wired-network battery date
 
 ;Bottom Bar
 [bar/bottom]
@@ -31,6 +33,8 @@ monitor-fallback = LVDS-1
 bottom = true
 width = 100%
 height = 20
+
+enable-ipc = true
 
 background = ${bar/top.background}
 foreground = ${bar/top.foreground}
@@ -47,8 +51,9 @@ font-0 = NotoSans-Regular:size=10;2
 font-1 = unifont:size=8;-1
 font-2 = FontAwesome:size=10;3
 font-3 = NotoSans-Regular:size=10;1
-font-4 = MaterialIcons:size=12;1
+font-4 = Material Icons:size=12;1
 font-5 = Termsynu:size=10:antialias=false;2
+font-6 = Font Awesome 5 Free:size=10;1
 
 modules-left = i3
 modules-right = cpu memory
@@ -67,7 +72,7 @@ ramp-2 = 
 
 [module/battery]
 type = internal/battery
-full-at = 98
+full-at = 100
 
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
@@ -161,11 +166,11 @@ label-connected = %essid%   %{F#999}%local_ip%%{F-}
 label-disconnected =    Not Connected
 label-disconnected-foreground = #66
 
-ramp-signal-0 = 
+ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-4 = 
 
 animation-packetloss-0 = 
 animation-packetloss-0-foreground = #ffa64c
@@ -316,6 +321,34 @@ label-visible-padding = ${self.label-focused-padding}
 label-mode-padding = ${self.label-focused-padding}
 label-mode-foreground = #000
 label-mode-background = #ffb52a
+
+[module/spotify-prev]
+type = custom/script
+exec = echo "玲"
+format = <label>
+click-left = playerctl previous spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo ""
+hook-1 = echo "契"
+initial = 1
+click-left = playerctl play-pause spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo ""
+format = <label>
+click-left = playerctl next spotify
+
+
+[module/spotify]
+type = custom/script
+interval = 1
+tail = true
+format-prefix = "  "
+format = <label>
+exec = ~/.config/scripts/get_spotify_status
 
 ; vim:ft=dosini
 

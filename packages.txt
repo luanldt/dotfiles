@@ -134,3 +134,7 @@ xorg-xwd 1.0.7-1
 xorg-xwininfo 1.1.4-1
 xorg-xwud 1.0.5-1
 zsh 5.7.1-1
+install
+scrot
+imagemagick
+i3lock

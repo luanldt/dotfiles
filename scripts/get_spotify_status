@@ -1,0 +1,13 @@
+#!/bin/bash
+
+player_status=$(playerctl --player=playerctld status 2>/dev/null || echo "Stopped")
+
+if [ "$player_status" == "Stopped" ]; then
+  echo "No music is playing"
+elif [ "$player_status" == "Paused"  ]; then
+  polybar-msg hook spotify-play-pause 2 >/dev/null
+  playerctl --player=playerctld metadata --format "{{ title }} - {{ artist }}"
+else # Can be configured to output differently when player is paused
+  polybar-msg hook spotify-play-pause 1 >/dev/null
+  playerctl --player=playerctld metadata --format "{{ title }} - {{ artist }}"
+fi
