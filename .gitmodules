@@ -11,8 +11,8 @@
 	path = libs/github/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
 [submodule "libs/github/powerlevel9k"]
-	path = powerlevel9k
+	path = libs/github/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k
 [submodule "libs/github/i3lock-fancy-multimonitor"]
-	path = i3lock-fancy-multimonitor
+	path = libs/github/i3lock-fancy-multimonitor
 	url = https://github.com/guimeira/i3lock-fancy-multimonitor
