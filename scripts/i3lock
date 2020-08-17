@@ -1,0 +1,6 @@
+#!/bin/bash
+
+chmod +x $HOME/.dotfiles/libs/github/i3lock-fancy-multimonitor/lock
+
+$HOME/.dotfiles/libs/github/i3lock-fancy-multimonitor/lock
+

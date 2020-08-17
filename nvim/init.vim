@@ -33,6 +33,8 @@ Plug 'prettier/vim-prettier'
 Plug 'flowtype/vim-flow'
 Plug 'mxw/vim-jsx'
 
+Plug 'neomake/neomake'
+
 Plug 'ayu-theme/ayu-vim' " or other package manager
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc-pairs'
@@ -150,20 +152,20 @@ set termguicolors
 set termguicolors
 "
 "colorscheme monokai_pro
-"let g:lightline = {
-"      \ 'colorscheme': 'monokai_pro',
-"      \ }
+let g:lightline = {
+      \ 'colorscheme': 'ayu',
+      \ }
 
 
-set background=light
-let g:airline_theme='one'
-colorscheme one
+set background=dark
+"let g:airline_theme='one'
+"colorscheme one
 "
 set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
-"colorscheme ayu
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
 " IndentLine {{
 " }}
@@ -433,5 +435,6 @@ nmap ; :Denite buffer<CR>
 nmap <leader>t :DeniteProjectDir file/rec<CR>
 nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
+
 
 let g:ale_linters = {'javascript': ['eslint']}

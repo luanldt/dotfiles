@@ -16,3 +16,6 @@
 [submodule "libs/github/i3lock-fancy-multimonitor"]
 	path = libs/github/i3lock-fancy-multimonitor
 	url = https://github.com/guimeira/i3lock-fancy-multimonitor
+[submodule "ranger/plugins/ranger_devicons"]
+	path = ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons.git

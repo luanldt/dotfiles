@@ -72,7 +72,7 @@ ramp-2 = 
 
 [module/battery]
 type = internal/battery
-full-at = 100
+full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
@@ -166,11 +166,11 @@ label-connected = %essid%   %{F#999}%local_ip%%{F-}
 label-disconnected =    Not Connected
 label-disconnected-foreground = #66
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 =
+ramp-signal-1 =
+ramp-signal-2 =
+ramp-signal-3 =
+ramp-signal-4 =
 
 animation-packetloss-0 = 
 animation-packetloss-0-foreground = #ffa64c
@@ -228,7 +228,7 @@ menu-0-4-exec = menu-open-5
 
 menu-1-0 = Lock
 menu-1-0-foreground = #ff5555
-menu-1-0-exec = ~/.config/scripts/i3lock-color
+menu-1-0-exec = ~/.config/scripts/i3lock
 menu-1-1 = Cancel
 menu-1-1-foreground = #fba922
 menu-1-1-exec = menu-close
